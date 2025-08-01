@@ -34,6 +34,7 @@ For the full list of use cases and step-by-step breakdowns, check the [Use Cases
 
 ## 🗂️ Project Structure
 
+```text
 saucedemo-playwright/
 ├── docs/                      # Documentation
 │   └── use-cases.md           # Test use cases descriptions
@@ -55,6 +56,7 @@ saucedemo-playwright/
 ├── playwright.config.ts       # Playwright configuration (browsers, retries, timeouts)
 ├── README.md                  # Project documentation
 └── tsconfig.json              # TypeScript compiler configuration
+```
 
 ---
 
