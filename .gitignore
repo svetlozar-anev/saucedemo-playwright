@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*.local
+
+# VS Code & other editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+
+# Playwright artifacts
+test-results/
+playwright-report/
+*.trace
+*.zip
+traces/
+videos/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+coverage-final.json
+lcov.info
+.nyc_output/
+
+# Optional
+.prettiercache
