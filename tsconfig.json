@@ -7,7 +7,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "types": ["node", "playwright"]
   },
-  "include": ["tests", "pages", "utils"]
+  "include": ["tests/**/*.ts", "pages/**/*.ts", "utils/**/*.ts"]
 }

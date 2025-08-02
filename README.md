@@ -34,16 +34,20 @@ For the full list of use cases and step-by-step breakdowns, check the [Use Cases
 
 ## 🗂️ Project Structure
 
+```text
 saucedemo-playwright/
 ├── docs/                      # Documentation
 │   └── use-cases.md           # Test use cases descriptions
 ├── pages/                     # Page Object Models (POMs)
 │   └── login-page.ts          # Login page methods & selectors
 ├── tests/                     # Test specs
-│   └── login.spec.ts          # Login test cases
+│   └── login/                 # Login test scenarios organized by use case
+│       ├── uc-1-empty-credentials.spec.ts
+│       ├── uc-2-missing-password.spec.ts
+│       └── uc-3-valid-login.spec.ts
 ├── utils/                     # Shared helpers
 │   ├── config.ts              # Environment variables & test config
-│   └── Logger.ts              # Logger utility
+│   └── logger.ts              # Logger utility
 ├── .env.example               # Example environment variables (public test credentials)
 ├── .gitattributes             # Git attributes for consistent line endings
 ├── .gitignore                 # Files and folders to ignore in Git
@@ -55,6 +59,7 @@ saucedemo-playwright/
 ├── playwright.config.ts       # Playwright configuration (browsers, retries, timeouts)
 ├── README.md                  # Project documentation
 └── tsconfig.json              # TypeScript compiler configuration
+```
 
 ---
 
@@ -97,23 +102,30 @@ npx playwright test --project=edge
 
 The following `npm` scripts are available for development and testing:
 
-| Command                 | Description                                       |
-|-------------------------|---------------------------------------------------|
-| `npm run test`          | Run all tests in the default browsers.           |
-| `npm run test:chromium` | Run tests only in **Chromium**.                  |
-| `npm run test:edge`     | Run tests only in **Microsoft Edge**.            |
-| `npm run lint`          | Run **ESLint** to check code quality.            |
-| `npm run format`        | Run **Prettier** to automatically format code.   |
+## 📜 Scripts
+
+The following `npm` scripts are available for development and testing:
+
+| Command                 | Description                                         |
+|-------------------------|-----------------------------------------------------|
+| `npm run test`          | Run all tests in the default browsers.              |
+| `npm run test:headed`   | Run all tests in headed (visible) mode.             |
+| `npm run test:debug`    | Run tests in debug mode with Playwright inspector.  |
+| `npm run test:chromium` | Run tests only in **Chromium** browser.             |
+| `npm run test:edge`     | Run tests only in **Microsoft Edge** browser.       |
+| `npm run lint`          | Run **Prettier** to check code formatting.          |
+| `npm run format`        | Run **Prettier** to automatically format code.      |
+| `npm run show-report`   | Open the Playwright HTML test report.               |
 
 ### ▶️ Example Usage
 
 ```bash
-npm run test          # Run all tests
-npm run test:chromium # Run tests in Chromium/Chrome
-npm run test:edge     # Run tests in Microsoft Edge
-npm run lint          # Check code for linting issues
-npm run format        # Format code with Prettier   
+npm run test          # Run all tests in default browsers
+npm run test:headed   # Run tests in headed (visible) mode
+npm run test:debug    # Run tests with Playwright inspector
+npm run lint          # Check code formatting
+npm run format        # Format code with Prettier
 ```
 
 ### 🚀 Continuous Integration
-CI setup coming soon (GitHub Actions / GitLab / etc.) — stay tuned!
+CI setup coming soon — stay tuned!
