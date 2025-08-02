@@ -7,15 +7,11 @@ This document details the main test automation use cases covered by the SauceDem
 ## ✅ Use Cases Covered
 
 ### UC-1: Login with empty credentials
-- Fill in **any** text in username and password fields
-- Clear both fields
 - Click **Login**
 - Assert error message: `"Epic sadface: Username is required"`
 
 ### UC-2: Login with missing password
 - Fill in a username
-- Fill in password
-- Clear only the password
 - Click **Login**
 - Assert error message: `"Epic sadface: Password is required"`
 

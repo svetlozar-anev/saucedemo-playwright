@@ -8,7 +8,7 @@ export default defineConfig({
   },
   fullyParallel: true,
   retries: 0,
-  reporter: 'html',
+  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     headless: true,
     screenshot: 'only-on-failure',
