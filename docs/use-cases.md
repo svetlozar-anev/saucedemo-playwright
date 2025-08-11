@@ -38,20 +38,20 @@ This document details the main test automation use cases covered by the SauceDem
 - Click **Login**
 - Assert error message: `"Epic sadface: Username and password do not match any user in this service"`
 
-### UC-006 Login fails with missing username
+### UC-006: Login fails with missing username
 
 - Enter password: `secret_sauce`
 - Click **Login**
 - Assert error message: `"Epic sadface: Username is required"`
 
-### UC-007 Login fails with special characters in username and password
+### UC-007: Login fails with special characters in username and password
 
 - Fill in username: `!@#$%^&*()`
 - Enter password: `!@#$%^&*()`
 - Click **Login**
 - Assert error message: `"Epic sadface: Username and password do not match any user in this service"`
 
-### UC-008 Login fails with whitespace-only username and password
+### UC-008: Login fails with whitespace-only username and password
 
 - Fill in empty username: `    `
 - Enter empty password: `    `
