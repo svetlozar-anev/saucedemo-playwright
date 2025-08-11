@@ -6,17 +6,17 @@ This project contains automated UI tests for the [https://www.saucedemo.com](htt
 
 ## 📌 Use Cases
 
-The project covers way too many scenarios and validations. 
+The project covers way too many scenarios and validations.
 For the full list of use cases and step-by-step breakdowns, check the [Use Cases Documentation](./docs/use-cases.md).
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Playwright** for browser automation  
-- **TypeScript** for static typing and better developer experience  
-- **ESLint** for linting and code quality  
-- **Prettier** for consistent code formatting  
+- **Playwright** for browser automation
+- **TypeScript** for static typing and better developer experience
+- **ESLint** for linting and code quality
+- **Prettier** for consistent code formatting
 - **dotenv** for environment variable management
 
 ---
@@ -72,17 +72,20 @@ saucedemo-playwright/
 ## ⚙️ Setup & Installation
 
 1. Clone the repository.
+
 ```bash
 git clone https://github.com/svetlozar-anev/saucedemo-playwright.git
 cd saucedemo-playwright
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. (Optional) Install Playwright browsers if not already installed:
+
 ```bash
 npx playwright install
 ```
@@ -106,7 +109,6 @@ The following `npm` scripts are available for development and testing:
 | `npm run format`              | Format code automatically using Prettier                    |
 | `npm run lint`                | Check code formatting using Prettier                        |
 
-
 ### ▶️ Example Usage
 
 ```bash
@@ -124,4 +126,5 @@ npm run lint                 # Check formatting
 ```
 
 ### 🚀 Continuous Integration
+
 CI setup coming soon — stay tuned!

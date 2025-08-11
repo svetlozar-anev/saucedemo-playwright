@@ -12,4 +12,3 @@ export const test = base.extend<Fixtures>({
     await use(loginPage);
   },
 });
-

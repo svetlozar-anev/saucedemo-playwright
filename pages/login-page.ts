@@ -1,7 +1,7 @@
 import { Page } from '@playwright/test';
 
 export class LoginPage {
-  constructor(private readonly page: Page) { }
+  constructor(private readonly page: Page) {}
 
   // === Navigation ===
   async goto() {

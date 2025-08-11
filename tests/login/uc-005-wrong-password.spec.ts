@@ -13,7 +13,7 @@ test('UC-005: Login fails with wrong password', async ({ loginPage }) => {
       users.problem,
       users.glitch,
       users.error,
-      users.visual
+      users.visual,
     ]) {
       test(`should log in as ${username}`, async ({ loginPage }) => {
         await loginPage.login(username, password);
