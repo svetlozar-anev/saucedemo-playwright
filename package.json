@@ -2,13 +2,15 @@
   "name": "saucedemo-playwright",
   "version": "1.0.0",
   "description": "Automated tests for saucedemo.com using Playwright and TypeScript",
-"scripts": {
+  "scripts": {
   "test": "npx playwright test",
+  "test:uc": "npx playwright test --grep",
   "test:headed": "npx playwright test --headed",
   "test:debug": "npx playwright test --debug",
   "test:chromium": "npx playwright test --project=chromium",
   "test:edge": "npx playwright test --project=edge",
   "show-report": "npx playwright show-report",
+  "codegen": "npx playwright codegen https://www.saucedemo.com",
   "format": "prettier --write .",
   "lint": "prettier --check ."
 },
